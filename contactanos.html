@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - UE.Gil Arturo Zambrano</title>
+    <link rel="stylesheet" href="stylespg2.css">
+
+    <style>
+        /* Estilos específicos para esta página que se añaden al styles.css */
+        .contact-info i {
+            width: 30px; /* Asegura el espaciado correcto para los íconos */
+            text-align: center;
+            color: var(--primary-color);
+        }
+        /* Los estilos del formulario están en styles.css para mantener la coherencia */
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="logo">UE.Gil Arturo Zambrano</div>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="noticias.html">NOTICIAS</a></li>
+                    <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="noticias.html">NOTICIAS</a></li>
+                    <li><a href="calendario.html">CALENDARIO</a></li>
+                    <li><a href="contactanos.html" class="active">CONTÁCTANOS</a></li>
+                    <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section class="section contact-page">
+                <h2>Contáctanos</h2>
+                <p class="intro-text">Si tienes alguna duda, sugerencia o necesitas información adicional, utiliza los siguientes medios o completa el formulario.</p>
+
+                <div class="contact-details-grid">
+                    
+                    <div class="contact-info">
+                        <h3>Datos de Contacto</h3>
+                        
+                        <p>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true">📍</i>
+                            <a href="#" target="_blank">Av. Principal s/n, Sector La Paz, Ciudad Ejemplo</a>
+                        </p>
+                        
+                        <p>
+                            <i class="fas fa-phone-alt" aria-hidden="true">📞</i>
+                            Teléfono Secretaría: <a href="tel:+582121234567">(+58) 212-123-4567</a>
+                        </p>
+                        
+                        <p>
+                            <i class="fas fa-mobile-alt" aria-hidden="true">📱</i>
+                            Móvil de Emergencia: <a href="tel:+584149876543">(+58) 414-987-6543</a>
+                        </p>
+
+                        <p>
+                            <i class="fas fa-envelope" aria-hidden="true">📧</i>
+                            Correo Dirección: <a href="mailto:direccion@uegilarturo.edu.ve">direccion@uegilarturo.edu.ve</a>
+                        </p>
+
+                        <p>
+                            <i class="fas fa-envelope-open-text" aria-hidden="true">📧</i>
+                            Correo Secretaría: <a href="mailto:secretaria@uegilarturo.edu.ve">secretaria@uegilarturo.edu.ve</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Envíanos un Mensaje</h3>
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                             <div class="form-group">
+                                <label for="asunto">Asunto:</label>
+                                <input type="text" id="asunto" name="asunto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

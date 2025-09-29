@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - UE.Gil Arturo Zambrano</title>
+    <link rel="stylesheet" href="stylespg3.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="logo">UE.Gil Arturo Zambrano</div>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="noticias.html">NOTICIAS</a></li>
+                    <li><a href="sobre-nosotros.html" class="active">SOBRE NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="noticias.html">NOTICIAS</a></li>
+                    <li><a href="calendario.html">CALENDARIO</a></li>
+                    <li><a href="contactanos.html">CONTÁCTANOS</a></li>
+                    <li><a href="sobre-nosotros.html" class="active">SOBRE NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section class="section about-page">
+                <h2>Nuestra Institución y Misión</h2>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Historia y Compromiso</h3>
+                            La <b>Unidad Educativa Gil Arturo Zambrano</b> ha sido un pilar en la formación académica y personal de la comunidad desde su fundación en el año 1985. Nos dedicamos a ofrecer una educación integral, enfocada en el desarrollo de <b>pensamiento crítico</b>,<b>Valores eticos</b>  y habilidades necesarias para el futuro.
+                        </p>
+                        <p>
+                            Creemos firmemente en un ambiente de aprendizaje inclusivo y motivador, donde cada estudiante es valorado y alentado a alcanzar su máximo potencial.
+                        </p>
+
+                        <h3>Nuestra Misión y Visión</h3>
+                        <div class="mission-vision">
+                            <div class="card mission">
+                                <h4> Misión</h4>
+                                <p>Educar ciudadanos íntegros, responsables y competentes, promoviendo el conocimiento, la creatividad y el respeto por el entorno social y natural.</p>
+                            </div>
+                            <div class="card vision">
+                                <h4> Visión</h4>
+                                <p>Ser reconocida como una institución educativa líder, innovadora y referente en la calidad formativa y el desarrollo de líderes comunitarios.</p>
+                            </div>
+                            <div class="card objetivo">
+                                <h4>objetivo</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ipsum voluptatem provident nisi tempora, temporibus saepe beatae? Sit saepe nobis commodi cum nesciunt? Placeat beatae at libero rem laboriosam aspernatur.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="imagenes/logo.jpeg" width="280px" height="200px" alt="Fachada o estudiantes de la UE.Gil Arturo Zambrano">
+                    </div>
+                </div>
+
+                <div class="values-section">
+                    <h3>Nuestros Valores Fundamentales</h3>
+                    <ul class="values-list">
+                        <li>✅ <b>Respeto:</b> Fomentamos la convivencia armónica y el aprecio por las diferencias.</li>
+                        <li>✅ <b>Responsa:bilidad</b> Enseñamos el compromiso con el deber y las consecuencias de las acciones.</li>
+                        <li>✅ <b>Excelenci:a</b> Buscamos la mejora continua en todos los ámbitos educativos.</li>
+                        <li>✅ <b>Integridad:</b> Promovemos la honestidad y la ética en la vida diaria.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

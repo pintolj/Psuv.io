@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario - UE.Gil Arturo Zambrano</title>
+    <link rel="stylesheet" href="stylespg4.css"> 
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <div class="logo">UE.Gil Arturo Zambrano</div>
+            
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="noticias.html">NOTICIAS</a></li>
+                    <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="noticias.html">NOTICIAS</a></li>
+                    <li><a href="calendario.html" class="active">CALENDARIO</a></li>
+                    <li><a href="contactanos.html">CONTÁCTANOS</a></li>
+                    <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section class="section calendar-page">
+                <h2>Calendario Escolar y Eventos</h2>
+                
+                <p class="intro-text">
+                    Consulta las fechas importantes, evaluaciones y eventos programados para el mes actual. ¡No te pierdas ninguna actividad!
+                </p>
+
+                <div class="calendar-container">
+                    <h3>Septiembre 2025 - Eventos Importantes</h3>
+                    <table class="calendar-table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Día</th>
+                                <th>Evento / Actividad</th>
+                                <th>Responsable</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="event-important">
+                                <td data-label="Fecha">01/09</td>
+                                <td data-label="Día">Lun</td>
+                                <td data-label="Evento / Actividad">Inicio del Nuevo Año Escolar 📚</td>
+                                <td data-label="Responsable">Dirección</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Fecha">05/09</td>
+                                <td data-label="Día">Vie</td>
+                                <td data-label="Evento / Actividad">Reunión Informativa para Padres (1.er Ciclo)</td>
+                                <td data-label="Responsable">Secretaría</td>
+                            </tr>
+                            <tr class="event-break">
+                                <td data-label="Fecha">15/09</td>
+                                <td data-label="Día">Lun</td>
+                                <td data-label="Evento / Actividad">Día Feriado Nacional (Suspensión de Actividades)</td>
+                                <td data-label="Responsable">N/A</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Fecha">19/09</td>
+                                <td data-label="Día">Vie</td>
+                                <td data-label="Evento / Actividad">Entrega de Planificación Semanal</td>
+                                <td data-label="Responsable">Docentes</td>
+                            </tr>
+                            <tr class="event-activity">
+                                <td data-label="Fecha">26/09</td>
+                                <td data-label="Día">Vie</td>
+                                <td data-label="Evento / Actividad">Día Deportivo y Cultural ⚽🎨</td>
+                                <td data-label="Responsable">Dpto. Cultura y Deportes</td>
+                            </tr>
+                            <tr class="event-important">
+                                <td data-label="Fecha">30/09</td>
+                                <td data-label="Día">Mar</td>
+                                <td data-label="Evento / Actividad">Cierre del Mes - Reunión de Personal</td>
+                                <td data-label="Responsable">Dirección</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="schedule-note">
+                    <h3>Horario de Atención Secretaría</h3>
+                    <p>
+                        La secretaría de la institución atiende al público de **Lunes a Viernes de 8:00 AM a 12:00 PM**. Las citas fuera de este horario deben ser solicitadas previamente por correo electrónico.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

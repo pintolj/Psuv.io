@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - UE.Gil Arturo Zambrano</title>
+    <link rel="stylesheet" href="stylenoticias.css"> 
+    </head>
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <div class="logo">UE.Gil Arturo Zambrano</div>
+            
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="noticias.html" class="active">NOTICIAS</a></li>
+                    <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="noticias.html" class="active">NOTICIAS</a></li>
+                    <li><a href="calendario.html">CALENDARIO</a></li>
+                    <li><a href="contactanos.html">CONTÁCTANOS</a></li>
+                    <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section class="section news-page">
+                <h2>Últimas Noticias y Comunicados</h2>
+                
+                <p class="intro-text">
+                    Mantente al tanto de las novedades de la institución, eventos y avisos importantes para la comunidad educativa.
+                </p>
+
+                <div class="news-grid">
+                    
+                    <article class="news-card image-card">
+                        <div class="card-image-container">
+                            <img src="img1.jpg" alt="Estudiantes en el Día de la Ciencia">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-date">🗓️ 28 Septiembre 2025</span>
+                            <h3>¡Feria de Ciencias 2025 fue un éxito rotundo!</h3>
+                            <p>Nuestros estudiantes de 5to y 6to grado demostraron su talento e ingenio en la exposición anual de proyectos científicos. ¡Felicidades a los ganadores! 🎉</p>
+                            <a href="#" class="read-more">Leer más &raquo;</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card text-card">
+                        <div class="card-content">
+                            <span class="card-date">🚨 25 Septiembre 2025</span>
+                            <h3>Comunicado Urgente: Cambio de Horario de Entrega de Notas</h3>
+                            <p>Se informa a los padres y representantes que la entrega de notas pautada para el día viernes ha sido movida al día lunes 30 de septiembre. Rogamos tomar las previsiones necesarias.</p>
+                            <a href="#" class="read-more">Ver comunicado completo &raquo;</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card image-card">
+                        <div class="card-image-container">
+                            <img src="img2.jpg" alt="Equipo de deportes celebrando">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-date">🏅 18 Septiembre 2025</span>
+                            <h3>Nuestro equipo de Voleibol Clasifica al Regional</h3>
+                            <p>Una gran jornada para nuestro equipo de voleibol junior que se llevó la victoria contra la U.E. Los Robles, asegurando su cupo en la fase regional.</p>
+                            <a href="#" class="read-more">Ver resultados &raquo;</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card text-card announcement">
+                        <div class="card-content">
+                            <span class="card-date">🔔 10 Septiembre 2025</span>
+                            <h3>Aviso sobre Inscripciones Extemporáneas</h3>
+                            <p>Se recuerda que el período de inscripciones extemporáneas finaliza este viernes. Consulte los requisitos en la Secretaría.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
